@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-dns-prefetch-control" content="on">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://wangwenzhi.eu.org/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://wangwenzhi.eu.org/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="https://wangwenzhi.eu.org/images/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/suka.css@0.2.1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://ip.mcr.moe" crossorigin>
     <link rel="preconnect" href="https://ipapi.co" crossorigin>
@@ -19,17 +28,8 @@
     <link rel="dns-prefetch" href="//api.ip.sb">
     <link rel="dns-prefetch" href="//api.ipify.org">
 
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="https://wangwenzhi.eu.org/images/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="https://wangwenzhi.eu.org/images/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="https://wangwenzhi.eu.org/images/favicon_io/site.webmanifest">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/suka.css@0.2.1">
     <script src="app.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
     <title>WangWenZhi | WWZ.iM</title>
     <script>
         // JavaScript function to reload the current page
@@ -44,39 +44,40 @@
         }
     </style>
 </head>
-<body>
-        <!--头部-->
-        
-        <header class="glass-header">
-     
-                <h1>
-                    <a href="#" onclick="refreshPage()" class="header-link">
-                        <div class="logo">
-                            <img src="https://wangwenzhi.eu.org/images/ww.png" alt="Wangwenzhi Logo">
-                        </div>
-                    </a>
-                    <a href="#" onclick="loadPage('pages/home.html')" class="header-link">
-                        WWZ.iM
-                    </a>  
-                    <a href="#" onclick="loadPage('pages/myip.html')" class="header-link">
-                        MYIP
-                    </a>
-                    <a href="#" onclick="loadPage('pages/vps.html')" class="header-link" >
-                        VPS
-                    </a>
-                    <a href="#" onclick="loadPage('pages/dh.html')" class="header-link">
-                        DH
-                    </a>
-                    <a href="#" onclick="loadPage('pages/about.html')" class="header-link" >
-                        ABOUT 
-                    </a>
-    
-                </h1>
-    
-        </header>
-        <!--头部-->
 
-        
+<body>
+    <!--头部-->
+
+    <header class="glass-header">
+
+        <h1>
+            <a href="#" onclick="refreshPage()" class="header-link">
+                <div class="logo">
+                    <img src="https://wangwenzhi.eu.org/images/ww.png" alt="Wangwenzhi Logo">
+                </div>
+            </a>
+            <a href="#" onclick="loadPage('pages/home.html')" class="header-link">
+                WWZ.iM
+            </a>
+            <a href="#" onclick="loadPage('pages/myip.html')" class="header-link">
+                MYIP
+            </a>
+            <a href="#" onclick="loadPage('pages/vps.html')" class="header-link">
+                VPS
+            </a>
+            <a href="#" onclick="loadPage('pages/dh.html')" class="header-link">
+                DH
+            </a>
+            <a href="#" onclick="loadPage('pages/about.html')" class="header-link">
+                ABOUT
+            </a>
+
+        </h1>
+
+    </header>
+    <!--头部-->
+
+
     <!-- 页面内容容器 -->
     <div id="pageContent"></div>
 
@@ -84,7 +85,7 @@
         // JavaScript 函数，通过 AJAX 加载页面内容
         function loadPage(pageUrl) {
             const pageContentContainer = document.getElementById('pageContent');
-            
+
             // 使用 fetch 加载页面内容
             fetch(pageUrl)
                 .then(response => response.text())
@@ -101,24 +102,39 @@
         loadPage('pages/home.html');
     </script>
 
-<footer class="footer">
-    <div class="content has-text-centered">
-        <p>
-            <strong></strong>
-            <a href="https://wwz.im/">Home ｜</a>
-            <a href="https://wangwenzhi.eu.org/" target="_blank">Blog ｜</a>
-            <a href="https://github.com/wangwenzhiwwz/myip" target="_blank">GitHub ｜</a>
-            <a href="https://wangwenzhi.eu.org/base64/" target="_blank">Base64 Encoding ｜</a>
-            <a href="https://vps.19971008.eu.org/" target="_blank">VPS ｜</a>
-            <a href="https://wangwenzhi.eu.org/file/" target="_blank"> File</a>
-        </p>
-        <p>
-            This is a Wangwenzhi IP address lookup and website access check tool.
-        </p>
-        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-        <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-    </div>
-</footer>
+    <script>
+        HTTP.runcheck();
+
+        IP.getWebrtcIP()
+        IP.getIpipnetIP();
+        IP.getSohuIP();
+
+        IP.getIpsbIP();
+        IP.getIpifyIP();
+        IP.getIpapiIP();
+    </script>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong></strong>
+                <a href="https://wwz.im/">Home ｜</a>
+                <a href="https://wangwenzhi.eu.org/" target="_blank">Blog ｜</a>
+                <a href="https://github.com/wangwenzhiwwz/myip" target="_blank">GitHub ｜</a>
+                <a href="https://wangwenzhi.eu.org/base64/" target="_blank">Base64 Encoding ｜</a>
+                <a href="https://vps.19971008.eu.org/" target="_blank">VPS ｜</a>
+                <a href="https://wangwenzhi.eu.org/file/" target="_blank"> File</a>
+            </p>
+            <p>
+                This is a Wangwenzhi IP address lookup and website access check tool.
+            </p>
+            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+        </div>
+    </footer>
+    
+
 
 </body>
+
 </html>
