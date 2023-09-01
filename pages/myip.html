@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://ip.mcr.moe" crossorigin>
+    <link rel="preconnect" href="https://ipapi.co" crossorigin>
+    <link rel="preconnect" href="https://myip.ipip.net" crossorigin>
+    <link rel="preconnect" href="https://pv.sohu.com" crossorigin>
+    <link rel="preconnect" href="https://api.ip.sb" crossorigin>
+    <link rel="preconnect" href="https://api.ipify.org" crossorigin>
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//ip.mcr.moe">
+    <link rel="dns-prefetch" href="//ipapi.co">
+    <link rel="dns-prefetch" href="//myip.ipip.net">
+    <link rel="dns-prefetch" href="//pv.sohu.com">
+    <link rel="dns-prefetch" href="//api.ip.sb">
+    <link rel="dns-prefetch" href="//api.ipify.org">
+
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://wangwenzhi.eu.org/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://wangwenzhi.eu.org/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://wangwenzhi.eu.org/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="https://wangwenzhi.eu.org/images/favicon_io/site.webmanifest">
+
+    <script src="app.js"></script>
+<body>
+    
+    <div class="container" style="margin-top: 10px;">
+        <section class="section">
+            <h2 class="sk-text-center title">What's my IP</h2>
+        
+            <div class="columns">
+                <div class="column">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">China</h2>
+                        <p class="sk-text-center sk-text-small">Data from IP.SB</p>
+                        <hr class="sk-my-2">
+                        <div class="ip-body">
+                            <div class="sk-text-center">
+                                <p id="ip-ipsb"></p>
+                                <p id="ip-ipsb-geo" class="sk-text-small"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">IPv4</h2>
+                        <p class="sk-text-center sk-text-small">Data from ipify + ipapi</p>
+                        <hr class="sk-my-2">
+                        <div class="ip-body">
+                            <div class="sk-text-center">
+                                <p id="ip-ipify"></p>
+                                <p id="ip-ipify-geo" class="sk-text-small"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <h2 class="sk-text-center title">Check</h2>
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-half-mobile">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">Baidu</h2>
+                        <p class="sk-text-center sk-text-small">China</p>
+                        <hr class="sk-my-2">
+                        <div class="http-body">
+                            <div class="sk-text-center">
+                                <p id="http-baidu"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half-mobile">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">NetEase</h2>
+                        <p class="sk-text-center sk-text-small">China</p>
+                        <hr class="sk-my-2">
+                        <div class="http-body">
+                            <div class="sk-text-center">
+                                <p id="http-163"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half-mobile">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">GitHub</h2>
+                        <p class="sk-text-center sk-text-small">Foreign</p>
+                        <hr class="sk-my-2">
+                        <div class="http-body">
+                            <div class="sk-text-center">
+                                <p id="http-github"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half-mobile">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">YouTube</h2>
+                        <p class="sk-text-center sk-text-small">Overseas</p>
+                        <hr class="sk-my-2">
+                        <div class="http-body">
+                            <div class="sk-text-center">
+                                <p id="http-youtube"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong></strong>
+		<a href="https://wwz.im/" >Home ｜</a> 
+		<a href="https://wangwenzhi.eu.org/" target="_blank">Blog ｜</a>    
+                <a href="https://github.com/wangwenzhiwwz/myip" target="_blank">GitHub ｜</a>
+                <a href="https://wangwenzhi.eu.org/base64/" target="_blank">Base64 Encoding ｜</a>
+		<a href="https://vps.19971008.eu.org/" target="_blank">VPS ｜</a>
+                <a href="https://wangwenzhi.eu.org/file/" target="_blank"> File</a>
+            </p>
+            <p>
+                This is a Wangwenzhi IP address lookup and website access check tool.
+            </p>
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+        </div>
+    </footer>
+    <script>
+        HTTP.runcheck();
+
+        IP.getWebrtcIP()
+        IP.getIpipnetIP();
+        IP.getSohuIP();
+
+        IP.getIpsbIP();
+        IP.getIpifyIP();
+        IP.getIpapiIP();
+    </script>
+</body>
+
+</html>

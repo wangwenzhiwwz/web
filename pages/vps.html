@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 设置页面样式，确保整个页面占满窗口 */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 包裹iframe的div，设置其宽度和高度为100% */
+        #iframe-container {
+            width: 100%;
+            height: 1080px;
+            overflow: hidden;
+        }
+
+        /* 设置iframe的宽度和高度为100% */
+        #iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* 去除iframe的边框 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 包裹iframe的div -->
+    <div id="iframe-container">
+        <!-- 嵌入的iframe -->
+        <iframe src="https://vps.wwz.im"></iframe>
+    </div>
+</body>
+</html>
